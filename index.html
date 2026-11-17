@@ -39,7 +39,7 @@ img{-webkit-user-drag:none}
 @keyframes gw{0%,100%{box-shadow:0 10px 30px rgba(0,0,0,.5),0 0 0 rgba(228,174,57,0)}50%{box-shadow:0 10px 30px rgba(0,0,0,.5),0 0 26px rgba(228,174,57,.45)}}
 .gwidget img{position:absolute;left:10px;top:8px;width:150px}
 .gwidget .h{position:absolute;left:172px;top:16px;font:700 13px var(--ui);letter-spacing:.12em;color:#e4ae39;text-transform:uppercase}
-.gwidget .t{position:absolute;left:172px;top:38px;white-space:nowrap;font:600 28px/1 var(--cond);text-transform:uppercase;color:#fff}
+.gwidget .t{position:absolute;left:172px;top:38px;white-space:nowrap;font:600 25px/1 var(--cond);text-transform:uppercase;color:#fff}
 .gwidget .s{position:absolute;left:172px;top:74px;font:500 14px var(--ui);color:#b9c2ca}
 .gwidget .x{position:absolute;right:12px;bottom:12px;padding:7px 14px;background:#4f8a2c;font:700 15px var(--cond);letter-spacing:.06em;text-transform:uppercase}
 
@@ -403,7 +403,7 @@ function closePop(){$('dim').classList.remove('show');}
 function giftPopup(){popup({img:IMG.case,name:'23 Birthday Gift Case',col:'The 23rd Birthday Collection',btns:[
  {t:'Close',f:()=>{closePop();$('gwidget').classList.add('show');}},
  {t:'Open',cls:'go',f:()=>{closePop();$('gwidget').classList.add('show');openCase('main');}}]});}
-giftPopup();
+$('gwidget').classList.add('show');
 
 /* inventory */
 R.gray=['#b0c3d9','Base Grade'];R.lblue=['#5e98d9','Industrial Grade'];
